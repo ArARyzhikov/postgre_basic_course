@@ -1,4 +1,3 @@
-SELECT age, name, gender, address as person_information
+SELECT CONCAT(name, ' (age:', age, ', gender: ''', gender, ''', address: ''', address, ''')') as person_information
 from person
-order by person_information ASC 
-
+order by person_information ASC
